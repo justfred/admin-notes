@@ -1,0 +1,24 @@
+sshfs/osxfuse
+
+#Install:
+https://osxfuse.github.io/
+
+#instructions
+https://github.com/osxfuse/osxfuse/wiki
+https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh
+
+#this was suggested but made hidden/inaccessable
+sudo mkdir /mnt/obtainium
+sudo sshfs obtainiu@obtainium.org:/home1/obtainiu /mnt/obtainium
+
+#list file systems
+lsvfs
+
+#this worked
+mkdir ~/Desktop/obtainium
+sshfs obtainiu@obtainium.org:/home1/obtainiu ~/Desktop/obtainium
+
+#unmount
+umount ~/Desktop/mnt
+rm -rf ~/Desktop/mnt
+sudo umount /mnt/obtainium

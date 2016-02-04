@@ -1,0 +1,21 @@
+laravel notes
+
+https://laravel.com/docs/5.2
+
+Install Composer
+https://getcomposer.org/doc/01-basic-usage.md
+
+Install Laravel
+
+Use Laravel to create an installation of the framework
+
+Add this to path:
+~/.composer/vendor/bin
+
+~/.composer/vendor/bin/laravel add recovery
+or
+composer create-project --prefer-dist laravel/laravel recovery
+
+Artisan CLI
+
+Homestead - virtual box 
