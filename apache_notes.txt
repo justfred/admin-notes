@@ -1,0 +1,8 @@
+#apache notes
+
+
+#Change apache user to vagrant because permissions issues:
+#https://laracasts.com/discuss/channels/general-discussion/vagrant-permissions-and-foldering
+
+#Apache2 virtual hosts
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
