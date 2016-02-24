@@ -1,0 +1,17 @@
+vim notes
+
+Learning vim
+https://laracasts.com/series/vim-mastery/episodes/2?autoplay
+
+j down
+k up
+l right
+h left
+
+v visual mode
+V visual mode by line
+
+d delete
+x delete character
+
+colorscheme

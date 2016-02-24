@@ -1,0 +1,5 @@
+frontendmasters notes
+
+Angular App Development
+https://frontendmasters.com/courses/angular-app-dev
+-should come after angular basics?

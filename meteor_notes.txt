@@ -1,0 +1,4 @@
+#meteor notes
+
+#Install
+curl https://install.meteor.com/ | sh
