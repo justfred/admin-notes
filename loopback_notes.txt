@@ -1,0 +1,33 @@
+Subscription-based - LoopBack seems to be free?
+-https://strongloop.com/node-js/subscription-plans/
+
+Start ARC on a specific port (Vagrant)
+PORT=4800 slc arc
+
+https://docs.strongloop.com/
+
+slc loopback
+	Build framework for application
+
+slc loopback:WHATEVER
+	“application generator”
+executes command-line autobuilders/scaffolding
+
+slc loopback:acl
+	Access control lists
+
+slc loopback:datasource
+	Add Mongodb, for example
+
+slc loopback:model
+Create a new model/table
+
+slc pm
+	Process manager
+
+slc arc
+	browser-based application tool
+	starts application
+
+
+

@@ -1,0 +1,45 @@
+#apache notes
+
+
+#Change apache user to vagrant because permissions issues:
+#https://laracasts.com/discuss/channels/general-discussion/vagrant-permissions-and-foldering
+
+<<<<<<< cd6c5871d70df281b705274902c25fe55485a572
+#####
+#set up vhosts on server
+
+#Apache2 virtual hosts file
+/etc/apache2/sites-available/WHATEVER
+#i named these SITE.localhost.conf, pointed at http://SITE.localhost/ but others worked
+
+sudo a2ensite SITEFILE
+#aliases the file into sites-enabled
+
+sudo service apache2 restart
+
+#####
+#add SITE.localhost to /etc/hosts on client
+=======
+#Apache2 virtual hosts
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
+
+/etc/apache2/sites-available
+
+sudo vim SITENAME.conf
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName scratch.local
+        ServerAlias www.scratch.local
+        DocumentRoot /var/www/scratch/public_html
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+a2ensite SITENAME.CONF
+
+sudo service apache2 restart
+
+edit local /etc/hosts
+
+>>>>>>> latest

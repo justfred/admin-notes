@@ -1,0 +1,513 @@
+
+nginx - web/mail server
+	https://www.nginx.com/
+	-Alternative to Apache
+	-Setup seems similar
+
+Bootstrap
+http://getbootstrap.com/
+	-by Twitter
+	CSS/JS template system
+
+Squid
+	http://www.squid-cache.org/
+	-Caching and forwarding web proxy
+
+Varnish
+	https://www.varnish-cache.org/
+ -Caching
+
+Redis
+	http://redis.io/
+ -caching?  Database?
+-“Data structure server”
+-fast, in-memory data storage
+
+PostgreSQL
+	http://www.postgresql.org/
+	-Database
+
+PHP FPM
+	http://php-fpm.org/
+-FastCGI Process Manager
+
+Hadoop
+http://hadoop.apache.org/
+	-Large-scale database
+
+Mongo
+https://www.mongodb.com
+	-Nosql database
+
+Tableau
+	http://www.tableau.com/
+	-Big Data analysis
+
+Node.js
+https://nodejs.org/en/
+	-Javascript back-end
+
+Angular.js
+https://angularjs.org/
+-UI app framework,
+-by Google
+
+Angular 2.0
+	https://angular.io/
+	Bleeding edge version of Angular
+	Uses TypeScript
+	Getting Started: https://angular.io/docs/ts/latest/quickstart.html
+
+Ember.js
+	http://emberjs.com/
+	-Similar to Angular, different data binding
+
+Express.js
+	http://expressjs.com/
+-Minimalist web framework for node.js
+	-”standard framework for node.js”
+	-”unopinionated”
+	-templating, routing, middleware
+
+Backbone.js
+http://backbonejs.org/
+-simple js framework
+-Compared to Ember, you have to write a lot more code, but it can do more what you want to do.
+-Lots of plugins
+
+React.js
+https://facebook.github.io/react/
+-Javascript library for views, has some backend too
+	-Just the V in MVC
+	-UI Framework
+	-by Facebook
+
+Knockout.js
+http://knockoutjs.com/
+“Simplify dynamic JavaScript UIs with the Model-View-ViewModel(MVVM) pattern”
+
+Aurelia
+	http://aurelia.io/
+“a JavaScript client framework for mobile, desktop and web leveraging simple conventions and empowering creativity.”
+
+DurandalJS
+http://durandal.io/
+	Related to Aurelia
+	Library targeted at older browsers
+
+Ractive.js - Javascript library
+http://www.ractivejs.org/
+
+MEAN stack
+	Mongo
+	Express.js
+	Angular.js
+	Node.js
+
+Meteor.js
+	https://www.meteor.com/
+-js “Full stack” framework
+
+Underscore.js - Javascript utilities for functional programming
+complements jquery
+http://underscorejs.org/
+Required by backbone.js
+
+Edge.js
+	Node.js and .net
+
+hapi, restify, geddy, koa, Kraken
+	-Alternative to express.js
+	-Hapi is used by Walmart, more about creating APIs than web pages
+	-restify also APIs
+	-geddy most rails-like, opinionated
+	-koa is eventual replacement for express
+http://koajs.com/
+
+LoopBack
+	http://loopback.io/
+	-”Develop model-driven apps with an Express-based framework.”
+	-JS Framework for REST APIs
+-Owned by IBM
+	-Based on Node
+-GUI tools for API examination
+-Works as a back-end for Angular
+-Main benefits over Node seem to be setting up back-end database connections and object relations
+	-Like an ORM for Node?
+
+Sails.js
+	Node.js framework
+	Similar to Loopback.js
+
+Handlebars.js
+	-JS template engine
+
+Jade.js
+	JS template engine
+http://jade-lang.com/
+
+Less
+	-CSS preprocessor
+	-I liked this one better than SASS
+Sass
+	-CSS preprocessor
+
+Plunker
+	http://plnkr.co/
+“Plunker is an online community for creating, collaborating on and sharing your web development ideas.”
+	-Code examples “Plunks”
+
+Ruby on Rails
+
+Browserfy.js
+http://browserify.org/
+	Dependency management
+Like require, for including files
+
+Require.js
+	For including files
+
+easyfront
+	https://github.com/lavrton/easyfront
+	“Integral tool for modern and dead simple frontend developent flow”
+https://medium.com/@lavrton/frontend-development-tools-are-damn-complex-let-us-fix-it-56b3ff46ca8d#.3527ls33i
+
+Mocha/chai (JS)
+	JS testing
+	Used by easyfront
+
+Gridster.js (JS)
+	-Positionable widgets
+-Jquery plugin
+http://gridster.net/
+Chart.js (JS)
+	-Charting tool
+
+Ionic (JS)
+    http://ionicframework.com/
+    Framework for mobile apps
+
+Browserify
+http://browserify.org/
+-”lets you require('modules') in the browser by bundling up all of your dependencies.”
+
+Symfony2 (PHP)
+ - PHP framework
+	https://www.reddit.com/r/PHP/comments/1bdln1/symfony2_vs_laravel
+
+Laravel (PHP)
+ - PHP framework
+-Eloquent ORM
+	-”more opinionated”
+	-”gentler learning curve”
+
+Silex (PHP)
+ - PHP Framework
+	http://silex.sensiolabs.org/
+	-Built on Symfony
+https://www.reddit.com/r/PHP/comments/1bdln1/symfony2_vs_laravel
+	-”micro framework”
+
+Zend (PHP)
+-PHP Framework
+	-older
+
+Phalcon (PHP)
+	-PHP Framework
+
+CodeIgniter (PHP)
+ - PHP Framework
+	-older, obsolete?
+
+CakePHP (PHP)
+	- PHP Framework
+	-older, obsolete?
+
+Bower/Gulp/Grunt
+ - build scripting
+-Grunt is older
+
+PHPUnit - PHP Unit testing
+
+Simpletest - simpler PHP unit testing
+
+Fitnesse - Unit testing
+http://fitnesse.org/
+
+Protractor
+https://github.com/angular/protractor
+	http://angular.github.io/protractor/#/
+	-AngularJS E2E (end to end) test framework
+	-Uses Selenium
+
+Selenium
+http://www.seleniumhq.org/
+	Web browser automation
+
+Karma
+	-AngularJS unit testing
+https://karma-runner.github.io/0.13/index.html
+
+Static code analysis (term)
+	Looking for unused code
+
+Heroku
+	-cloud Platform-as-a-Service
+
+AWS
+	-Amazon Web Services
+	-Hosted virtual machines
+
+Luigi
+	https://github.com/spotify/luigi
+	-Python module that helps you build complex pipelines out of batch jobs
+	-Comes with Hadoop support built in
+http://luigi.readthedocs.org/en/stable/
+
+Python
+	-Programming language
+	-Often used for batch processing
+
+MapReduce
+	https://en.wikipedia.org/wiki/MapReduce
+
+YUI
+	-Yahoo User Interface
+
+Salt/Chef/Puppet/Ansible
+-configuration management
+http://www.infoworld.com/article/2609482/data-center/data-center-review-puppet-vs-chef-vs-ansible-vs-salt.html
+
+Jenkins
+-configuration management
+
+Gocd
+-configuration management
+
+webpack
+    https://webpack.github.io/
+    Dependency management
+	alternative to gulp/grunt
+	Used by easyfront
+
+Graph Server
+	https://en.wikipedia.org/wiki/Graph_database
+
+Tornado
+	-Python web framework
+http://www.tornadoweb.org/en/stable/
+
+Docker
+ 	-”An open platform for distributed app”
+	-Alternative to Vagrant?
+https://docs.docker.com/mac/
+
+package.json
+	https://docs.npmjs.com/files/package.json
+	node.js package dependencies are stored in this file
+
+twilio
+	-not really a tool/framework
+	API for text messaging
+https://www.twilio.com/
+
+Kafka
+	http://kafka.apache.org/
+-by Apache
+“A high-throughput distributed messaging system”
+-Messaging processor, queued messages, redundancy, reliable playback
+-Messages are stored for a period of time, then discarded
+
+Yeoman
+	-Project generator
+
+Plop
+-Project generator
+
+Cycle.js
+http://cycle.js.org/
+	-Functional and reactive js framework
+
+Haskell
+	https://www.haskell.org/
+	-”An advanced purely-functional programming language”
+
+Swift Express
+	https://github.com/crossroadlabs/Express
+-“Express is an asynchronous, simple, powerful, yet unopinionated web application server written in Swift”
+
+Play (Java)
+	https://www.playframework.com/
+	“High velocity web framework for Java and Scala
+
+Composer
+	https://getcomposer.org/
+	-Dependency management system for PHP
+	composer.phar runtime
+
+Yum
+	-Package Manager
+
+Apt
+	-Package Manager
+
+TypeScript (JS)
+	http://www.typescriptlang.org/
+“TypeScript lets you write JavaScript the way you really want to.
+TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.”
+-variable types
+-static analysis
+-compiles to standard js
+
+Bourbon (CSS)
+	http://bourbon.io/
+“A simple and lightweight mixin library for Sass.”
+
+Neat (CSS)
+http://neat.bourbon.io/
+“A lightweight semantic grid framework for Sass and Bourbon.”
+
+Coffeescript (JS)
+http://coffeescript.org/
+	“CoffeeScript is a little language that compiles into JavaScript.”
+
+Jekyll
+	http://jekyllrb.com/
+	“Transform your plain text into static websites and blogs.”
+
+Textile
+
+Compass
+
+PHPLint (PHP)
+	http://www.icosaedro.it/phplint/
+https://www.npmjs.com/package/phplint
+
+NetBeans
+
+Drupal (PHP)
+	https://www.drupal.org/
+	Open source CMS
+	PHP-based
+
+Joomla (PHP)
+	PHP CMS
+
+WordPress (PHP)
+	PHP CMS
+
+Ant (Java)
+	Java build scripting
+
+Slim (PHP)
+	http://www.slimframework.com/
+	http://docs.slimframework.com/ (v2 docs - current version is 3)
+http://www.slimframework.com/docs/index.html (v3 docs)
+https://akrabat.com/wp-content/uploads/2015-05-20-phpberks-getting-started-with-slim-3.pdf (getting started deck)
+-PHP micro-framework
+	-Inspired by Ruby Sinatra
+	-”The C in MVC”
+	-Seems to be Javascript-like syntax for routes
+	-$request, $response, $next
+	-DI
+
+RedBeanPHP (PHP)
+	low-footprint ORM library
+
+Kendo UI
+	http://www.telerik.com/kendo-ui
+	“The Most Complete UI Framework to Speed Up Your HTML/JS Development”
+	$999
+
+Expressive (PHP)
+	http://framework.zend.com/blog/announcing-expressive.html
+	-PHP framework - middleware
+	-Zend
+
+Lumen (PHP)
+https://lumen.laravel.com/
+	-Laravel micro-framework
+
+jsFiddle (tool)
+	https://jsfiddle.net/
+	-”playground” for testing jss/css
+others: http://designshack.net/articles/css/5-online-playgrounds-for-html-css-and-javascript-compared/
+
+Codepen (tool)
+	http://codepen.io/
+	-playground for testing js.css
+
+Faker (js tool)
+    https://scotch.io/tutorials/generate-fake-data-for-your-javascript-applications-using-faker
+    Generate fake data in js
+
+Firebase (tool)
+	https://www.firebase.com/
+	Free DB platform/hosting/user auth
+
+Webflow (tool)
+    https://webflow.com/
+	"Design and launch dynamic, responsive websites. Without writing code."
+
+PostgREST (tool)
+    https://www.compose.io/articles/your-sql-schema-is-your-json-api-with-postgrest/?utm_source=Facebook&utm_medium=newsfeed&utm_term=cloud+platforms&utm_content=your+sql+schema+is+your+json+api+with+postgrest&utm_campaign=Facebook+ads
+    -Tool to turn Postgresql into an API
+
+Closure (terminology)
+	https://en.wikipedia.org/wiki/Closure_(computer_programming)
+	Anonymous functions in PHP:
+		http://us2.php.net/manual/en/functions.anonymous.php
+
+CORS (terminology)
+	https://en.wikipedia.org/wiki/Cross-origin_resource_sharing
+	Cross-origin resource sharing
+
+Dependency Injection (terminology)
+	https://en.wikipedia.org/wiki/Dependency_injection
+	“a software design pattern that implements inversion of control for resolving dependencies”
+	Angular2: https://angular.io/docs/ts/latest/guide/dependency-injection.html
+
+Design Patterns (terminology)
+	-https://en.wikipedia.org/wiki/Software_design_pattern
+Javascript Design Patterns
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+	Revealing module
+	Factory
+	Singleton
+
+Federated Identity (terminology)
+    https://en.wikipedia.org/wiki/Federated_identity
+
+Lint (terminology)
+    https://en.wikipedia.org/wiki/Lint_(software)
+    -tool that flags bad code
+
+Static analysis (terminology)
+
+Semantic HTML (terminology)
+	https://en.wikipedia.org/wiki/Semantic_HTML
+
+Front End Masters (training)
+    https://frontendmasters.com/
+
+Egghead.io (training)
+    https://egghead.io/
+
+Udemy (training)
+    https://www.udemy.com
+
+Code School (training)
+    https://www.codeschool.com
+
+Scotch.io (training)
+    https://scotch.io/
+
+Skillinifinity (training)
+    http://blog.skillinfinity.com/
+
+ShawAcademy
+    http://www.shawacademy.com/
+
+VueJS (JS)
+    https://vuejs.org/
+    "Reactive Components for Modern Web Interfaces"

@@ -1,0 +1,157 @@
+Angular2 Bootstrap
+https://github.com/valor-software/ng2-bootstrap
+
+Angular2 resources
+http://www.angular2.com/
+
+
+@whatever is a typescript decorator
+@Component({metdata - Javascript object})
+
+@Component({
+	selector: ‘app’, //this created an html tag <app>
+	template: ‘html here’,
+(or - use backticks to do multi-line)
+	template: `
+   <h1>Angular 2 Boilerplate</h1>
+   <p>Hello Fred!</p>
+`,
+(or - use templateUrl to point to a file)
+
+	directives: []
+	styles: []
+	styleUrls: []
+})
+
+OnInit
+import {OnInit} from “angular2/core”;
+...
+export class SomeComponent implements OnInit {
+ngOnInit():any {
+	//stuff to do on init
+}
+}
+
+Angular2 templates
+	#whatever - local variable
+
+Local variables example:
+[class.whatever]=”inputElement.value === ‘yes’”
+<input type=”text” #inputElement (keyup)=”0”>
+-keyup is needed to trigger an event, even though we don’t use it directly
+
+
+[style.display]="name.value === '' ? 'none' : 'block'"
+[ngStyle]="{display: name.value === '' ? 'none' : 'block'}"
+
+Data binding
+	#localVariable
+{{String interpolation}}
+	{{string}} or local var or ‘string’
+	{{x=2}}
+	{{componentFunction()}}
+[property binding] put something into an element
+	[value]=”expression” Angular2 property
+	[ngClass]
+	Anything with ng is a directive, otherwise it’ a property.
+	We only need property binding for ngWhat if it needs an input.
+(element binding) get something out of an element
+	(keyup)
+[(two-way data binding)]
+-A2 is generally unidirectional data binding.  Faster, easier to debug.
+	-was standard in Angular1, is optional in Angular2
+	-not natively built in
+	<input type=”text” [(ngModel)]=”name”>
+Binding to custom properties from parent to child:
+	child:
+		(in @Component)
+		template: ‘<p>Hello {{name}}, {{age}}</p>’,
+		(in @Component)
+inputs: [‘name:myName’, ‘age:myAge’] //internal:external
+(or in export class)
+@Input(myAge) age=20;
+	parent:
+<my-component [myName]=”whatever” [myAge]=-20>
+	Binding from child to parent:
+		parent:
+			<my-component (hobbiesChanged)=”hobbies = $event”>
+				-$event is the default name for the value passed with an event
+			template: ‘my hobbies are: {{hobbies}}’
+		child:
+			(at the top)
+			import(EventEmitter) from ‘angular2/core’;
+			(in the @Component template)
+			<input type=”text” (keyup)=”onHobbiesChanged(hobbies.value)” #hobbies>
+			outputs: [‘hobbiesChanged’]
+			(in export class)
+			hobbiesChanged = new EventEmitter<string>();
+			onHobbiesChanged(hobbies: string) {
+	this.hobbiesChanged.emit(hobbies);
+}
+
+Directives
+	-Directives are instructions that tell Angular2 how to alter DOM
+	-components ARE directives embedded with selectors (that look like tags).
+	-ngWhatever are also directives.
+	Attribute Directives
+		[ngClass] or [ngStyle] that take inputs are in brackets
+		ngControl
+		-We can also create our own.
+	-selector name in square brackets for name definition
+import {Directive} from ‘angular2/core’;
+			@Directive({
+				selector: ‘[bxHighlight]’,
+})
+export class HighlightDirective {
+	private _defaultColor: ‘green’;
+	constructor(private _elRef: ElementRef) {}
+
+	ngOnINit()any {
+		this._elRef.nativeElement.style.backgroundColor = this._defaultColor;
+	}
+}
+parent:
+	template: ‘<div bxHighlight>’
+	directives: [HightlightDirective],
+
+	Structural directives
+		*ngFor
+		Change the element to which they’re attached AND the structure of the document.
+
+Services
+	-central points where we collect logic, we can inject them into components
+	This can be in a component:
+providers: [LoggingService]
+...and all children will be able to use this too.
+-this creates an instance for each component
+	we can also put this in boot.ts
+		bootstrap(AppComponent, [LoggingService])’
+		-which creates a single instance shared by all components
+	?are services a good place to put models?
+
+Lecture: data service
+https://www.udemy.com/the-complete-guide-to-angular-2/learn/v4/t/lecture/4525004
+
+Pipes
+Transform appearance, formatting, etc.
+
+Routing
+	Import {RouteConfig} from “angular2/router”;
+Import {ROUTER_DIRECTIVES} from “angular2/router”;
+	Import {WhateverComponent} from “./WhateverComponent”
+
+	@Component ({
+		Template: `
+			<header>
+				<ul>
+					<li><a [routerLink]=”[‘Whatever’]”></a></li>
+				</ul>
+</header>
+<router-outlet></router-outlet>
+`
+Directives: [ROUTER_DIRECTIVES]
+	})
+	@RouteConfig([
+		//main app routes (can register subroutes in other places)
+		{path: ‘/whatever’, name: ‘Whatever’, component: ‘WhateverComponent’, useAsDefault: true}
+])

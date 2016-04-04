@@ -12,10 +12,54 @@ Use Laravel to create an installation of the framework
 Add this to path:
 ~/.composer/vendor/bin
 
-~/.composer/vendor/bin/laravel add recovery
+~/.composer/vendor/bin/laravel add PROJECTNAME
 or
-composer create-project --prefer-dist laravel/laravel recovery
+composer create-project --prefer-dist laravel/laravel PROJECTNAME
+or
+laravel new PROJECTNAME
+    -creates the directory and all subfiles
+    cd PROJECTNAME
+    -ln -s public public_html
+
 
 Artisan CLI
 
 Homestead - virtual box 
+
+----
+Authentication
+
+https://laravel.com/docs/5.1/authentication
+#didn't work.
+
+https://scotch.io/tutorials/simple-and-easy-laravel-login-authentication
+#seems to be an older version of laravel, didn't work
+
+https://laracasts.com/series/laravel-5-fundamentals/episodes/15
+#this didn't work either; controllers doesn't exist.
+
+Authentication
+    config/auth.php
+
+https://laravel.com/docs/5.2/authentication
+php artisan make:auth
+
+----
+
+Config:
+    .env environment file
+        -database user/password
+    config/database
+        -database user/password
+Routes:
+    app/Http/routes.php
+Controllers:
+    app/Http/Controllers/*
+Views:
+    resources/views/*
+Database migrations:
+    database/migrations
+
+-----
+
+php artisan routes:list

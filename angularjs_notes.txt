@@ -1,0 +1,179 @@
+angular_notes.txt
+
+authentication
+https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec#.xfrva4h4f
+
+http://www.sitepoint.com/implementing-authentication-angular-applications/
+
+ng-app
+    -does not work on head tag
+ng-controller
+ng-model
+ng-repeat
+ng-if
+ng-click
+
+angular_notes.txt
+
+https://angularjs.org/
+-UI app framework,
+-by Google
+
+Terminology/Technology
+Angular Material
+	-Material interface for Angular
+Angular UI Bootstrap
+	-Bootstrap  interface for Angular
+	-Doesn’t play nice with jquery; includes its own version of jquery lite
+Angularstrap
+	-Newer better version of Angular UI Bootstrap
+jQuery lite
+	http://www.informit.com/articles/article.aspx?p=2271482&seqNum=10
+
+authentication
+https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec#.xfrva4h4f
+
+ngStorage
+https://github.com/gsklee/ngStorage
+	“An AngularJS module that makes Web Storage working in the Angular Way. Contains two services: $localStorage and $sessionStorage.”
+
+http://www.sitepoint.com/implementing-authentication-angular-applications/
+
+ng-app
+   -does not work on head tag
+ng-controller
+ng-model
+	used to bind elements to values
+<input ng-model=”whatever”
+ng-repeat
+ng-if
+ng-click
+
+ng-src
+	<img ng=src=”{{product.images[0].full}}”/>
+-otherwise img src doesn’t load properly (browser tries to load the image before the expression evaluates)
+ng-init
+	evaluate expression
+	ng-init=”tab=1”
+
+ng-submit
+	used on form - function to run on submit
+	ng-submit=”reviewCtrl.addReview()”
+
+ng-pristine
+	class - field/input hasn’t been used
+ng-dirty
+	class
+
+ng-invalid
+	class - field is invalid
+
+ng-valid
+	class
+Filters
+	{{ data | whatever:options }}
+	<li class="list-group-item" ng-repeat="product in store.products | orderBy:'-price'">
+
+ng-include
+    specify file to include within tag
+    <header data-ng-include=" 'assets/views/partials/top-navbar.html' " class="navbar navbar-default navbar-static-top hidden-print"></header>
+
+ui-sref
+    http://angular-ui.github.io/ui-router/site/#/api/ui.router.state.directive:ui-sref
+    binds a link to a state
+
+Sorting and filtering:
+    https://scotch.io/tutorials/sort-and-filter-a-table-using-angular
+
+Localization
+	https://docs.angularjs.org/guide/i18n
+	https://thebhwgroup.com/blog/2015/01/translation-localization-angularjs
+	https://github.com/angular-translate/angular-translate
+
+Directives
+	include template files
+		<h3 ng-include=”’template.html’”></h3>
+		-double and single quotes
+	define new HTML-type tags “template expanding directives”
+		<new-item></new-item>
+Element Directive
+	-don’t use a self closing tag on custom elements
+		<new-item></new-item>
+app.directive(‘newItem’, function() {
+		return {
+			restrict: ‘E’,
+			templateUrl: ‘new-item.html’
+};
+});
+Attribute Directive
+		<h3 product-title>
+app.directive(‘newItem’, function() {
+		return {
+			restrict: ‘A’,
+			templateUrl: ‘new-item.html’
+};
+});
+	Controller in directive:
+
+app.directive(‘newItem’, function() {
+		return {
+			restrict: ‘E’,
+			templateUrl: ‘new-item.html’
+controller: function() {
+…
+},
+controllerAs: ‘panels’,
+};
+});
+
+Dependencies and Services
+
+	new module
+		(function() {
+			var app=angular.module(‘store-products’, []);
+
+			app.controller...
+
+			app.directive…
+		})();
+	depends
+		var app=angular.module(‘store’, [‘store-products’]);
+		..and include the new .js file in index.html
+
+	service
+		begins with $
+		$http.get(‘/products.json’);
+		-return a promise object, which allows callbacks
+
+		Dependency injection
+		app.controller(‘SomeController’, [‘$http’,’$log’,function($http, $log){
+} ]);
+
+app.controller('StoreController', ['$http', function($http) {
+    var store = this;
+    store.products = [];
+
+    $http.get('/store-products.json').success(function(data) {
+      store.products = data;
+    });
+  }]);
+
+
+Clip-two
+	/views/partial/nav.html
+<a ui-sref="app.dashboard">
+config.router.js
+	}).state('app.dashboard', {
+   url: "/dashboard",
+   templateUrl: "assets/views/dashboard.html",
+   resolve: loadSequence('jquery-sparkline', 'dashboardCtrl'),
+   title: 'Dashboard',
+   ncyBreadcrumb: {
+       label: 'Dashboard'
+   }
+/js/controllers/dashboardCtrl.js
+config.constant.js
+'dashboardCtrl': 'assets/js/controllers/dashboardCtrl.js',
+
+
+http://stackoverflow.com/questions/29491079/redirect-a-state-to-default-substate-with-ui-router-in-angularjs

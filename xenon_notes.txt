@@ -1,0 +1,13 @@
+Remove:
+	-chat
+
+Features that work:
+	-Full-screen/not
+	-Left menu
+		-Expanding items and submenus
+
+app/js/app.js
+	Views
+
+app/js/services.js
+	Menus are here, in prepareSidebarMenu and prepareHorizontalMenu

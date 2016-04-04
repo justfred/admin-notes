@@ -1,0 +1,93 @@
+#git notes
+
+#Init local
+git init
+
+#check in local changes
+git add .
+
+#status - files waiting to be committed
+git status
+
+#commit to local
+git commit -m 'Message'
+
+#add remote
+git remote add origin https://github.com/justfred/admin-notes.git
+
+#use ssh (must have key set at github)
+#http://stackoverflow.com/questions/6565357/git-push-requires-username-and-password
+git remote set-url origin git@github.com:justfred/admin-notes.git
+
+#Pull
+git pull https://github.com/justfred/admin-notes.git
+
+#Push to remote
+git push -u origin master
+#(username/password required)
+
+<<<<<<< cd6c5871d70df281b705274902c25fe55485a572
+#clone from github
+git clone https://github.com/justfred/admin-notes.git
+=======
+#my recent changes
+
+git log
+
+#files changed not on stage
+git status
+
+#diff on unstaged files
+git diff
+#diff on staged files
+git diff -staged
+
+git add .
+git add FILE
+git add DIRECTORY
+
+git reset HEAD
+git reset HEAD <FILE>
+
+#add and commit
+git commit -a -m “Message”
+#add to previous commit, update message
+git commit --amend -m “New Message”
+
+#roll back to previous version
+git checkout -- FILE
+
+#undo the last commit, move everything back into stage (1 before HEAD)
+git reset --soft HEAD^
+#undo last commit, throw away
+git reset --hard HEAD^
+#2 revs back ^^
+git reset --hard HEAD^^
+
+#NOTE - don’t change history after a push
+
+#push to remote
+git push -u origin master
+git push -u <name> <branch>
+#-u remembers name and branch
+git push
+
+#pull from remote (latest changes
+git pull
+
+#add a remote
+git remote add origin https://where.com/what/what.git
+
+#what remotes do I know about?
+git remote -v
+
+git remote rm <name>
+
+#global /gitignore
+git config --global core.excludesfile ~/.gitignore_global
+
+#remove cached
+git rm -r --cached .idea
+
+
+>>>>>>> latest

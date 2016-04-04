@@ -1,0 +1,46 @@
+Start Mongodb
+$ mongod &
+
+Run Mongo
+$ mongo
+
+show databases
+
+Create database
+-there isn’t really an equivalent; just use it and start putting in data
+use NEWDBNAME;
+
+Create user
+use NEWDBNAME;
+db.createUser({"user":"demo","pwd":"L00pBack",roles: ["readWrite","dbAdmin"]});
+
+db.createUser({"user":"fheald","pwd":"Drop1-er",roles: ["readWrite","dbAdmin"]});
+
+
+$ mongoimport --jsonArray -d locatewalmart -c store --type json --file walmart.json -h yourMongoHost --port yourMongoPort -u yourMongoUsername -p yourMongoPassword
+
+
+
+Start Mongodb
+$ mongod &
+
+Run Mongo
+$ mongo
+
+show databases
+
+Create database
+-there isn’t really an equivalent; just use it and start putting in data
+use NEWDBNAME;
+
+Create user
+use NEWDBNAME;
+db.createUser({"user":"demo","pwd":"L00pBack",roles: ["readWrite","dbAdmin"]});
+
+db.createUser({"user":"fheald","pwd":"Drop1-er",roles: ["readWrite","dbAdmin"]});
+
+
+$ mongoimport --jsonArray -d locatewalmart -c store --type json --file walmart.json -h yourMongoHost --port yourMongoPort -u yourMongoUsername -p yourMongoPassword
+
+
+
