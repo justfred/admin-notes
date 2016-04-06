@@ -18,3 +18,25 @@ sudo service apache2 restart
 
 #####
 #add SITE.localhost to /etc/hosts on client
+=======
+#Apache2 virtual hosts
+https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
+
+/etc/apache2/sites-available
+
+sudo vim SITENAME.conf
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName scratch.local
+        ServerAlias www.scratch.local
+        DocumentRoot /var/www/scratch/public_html
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+a2ensite SITENAME.CONF
+
+sudo service apache2 restart
+
+edit local /etc/hosts
