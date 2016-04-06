@@ -1,0 +1,14 @@
+OSX Notes
+
+csrutil
+    https://coolestguidesontheplanet.com/what-is-sip-in-osx-10-11-el-capitan/
+    Reboot to recovery mode (command-r) then terminal, csrutil disable (or enable)
+
+mcrypt
+    https://coolestguidesontheplanet.com/install-mcrypt-for-php-on-mac-osx-10-10-yosemite-for-a-development-server/
+
+restart Apache
+    sudo apachectl restart
+
+Apache vhosts
+    /private/etc/apache2/extra/httpd-vhosts.conf

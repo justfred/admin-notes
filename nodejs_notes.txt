@@ -1,3 +1,59 @@
 Running Node on a server:
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
+
+Install Node.js on osx
+https://nodejs.org/en/
+
+Make local user owner so you don’t have to SUDO npm -g:
+
+$ sudo chown -R $USER /usr/local/bin
+$ sudo chown -R $USER /usr/local/lib/node_modules
+
+
+Terminology/Technology
+npm
+	node package manager, comes with node
+	--save track in package.json
+	-g install global (I needed to use sudo; changed permissions and didn’t)
+
+	npm list -g
+		-List global modules
+
+	npm init
+		-wizard for creating package.json files
+
+	npm install
+		-install dependencies; runs against package.json
+
+Nodemon
+    http://nodemon.io/
+	-run node app with monitoring
+
+Node Inspector
+    https://github.com/node-inspector/node-inspector
+    -“debugger interface for Node.js applications”
+
+Supervisor
+	Similar to Nodemon
+
+Exports
+    If you know a module sends back only one object
+    module.exports = OBJECT;
+    similar to “return OBJECT”.
+
+Jade
+	Standard template engine for express
+	-why rewrite html?
+
+Middleware
+	app.use(FUNCTION()) preprocesses request, response, then continues.
+	Example: urlencoded
+
+Mongoose
+	MongoDB
+	Object Document Manager
+
+PHP Micro Frameworks
+    https://modess.io/php-micro-framework-for-a-restful-api-part-1/
+    Overview of a bunch of these
