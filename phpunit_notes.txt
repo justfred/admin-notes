@@ -1,0 +1,23 @@
+https://phpunit.de/
+
+#documentation
+https://phpunit.de/manual/current/en/index.html
+
+#phpunit.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Slim Test Suite">
+            <directory>./unittest/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
+
+#in the <phpunit you can add a bootstrap file
+<phpunit bootstrap="tests/bootstrap.php">
+
+#execute phpunit, pointed at phpunit.xml
+./vendor/bin/phpunit --verbose
+
+#Guzzle, for testing REST endpoints
+http://guzzle.readthedocs.org/en/latest/index.html

@@ -15,13 +15,16 @@ Squid
 
 Varnish
 	https://www.varnish-cache.org/
- -Caching
+    -Caching
 
 Redis
 	http://redis.io/
- -caching?  Database?
--“Data structure server”
--fast, in-memory data storage
+    -caching?  Database?
+    -“Data structure server”
+    -fast, in-memory data storage
+
+Memcached
+    https://memcached.org/
 
 PostgreSQL
 	http://www.postgresql.org/
@@ -29,10 +32,10 @@ PostgreSQL
 
 PHP FPM
 	http://php-fpm.org/
--FastCGI Process Manager
+    -FastCGI Process Manager
 
 Hadoop
-http://hadoop.apache.org/
+    http://hadoop.apache.org/
 	-Large-scale database
 
 Mongo
@@ -44,13 +47,13 @@ Tableau
 	-Big Data analysis
 
 Node.js
-https://nodejs.org/en/
+    https://nodejs.org/en/
 	-Javascript back-end
 
 Angular.js
-https://angularjs.org/
--UI app framework,
--by Google
+    https://angularjs.org/
+    -UI app framework,
+    -by Google
 
 Angular 2.0
 	https://angular.io/
@@ -70,33 +73,33 @@ Express.js
 	-templating, routing, middleware
 
 Backbone.js
-http://backbonejs.org/
--simple js framework
--Compared to Ember, you have to write a lot more code, but it can do more what you want to do.
--Lots of plugins
+    http://backbonejs.org/
+    -simple js framework
+    -Compared to Ember, you have to write a lot more code, but it can do more what you want to do.
+    -Lots of plugins
 
 React.js
-https://facebook.github.io/react/
--Javascript library for views, has some backend too
+    https://facebook.github.io/react/
+    -Javascript library for views, has some backend too
 	-Just the V in MVC
 	-UI Framework
 	-by Facebook
 
 Knockout.js
-http://knockoutjs.com/
-“Simplify dynamic JavaScript UIs with the Model-View-ViewModel(MVVM) pattern”
+    http://knockoutjs.com/
+    “Simplify dynamic JavaScript UIs with the Model-View-ViewModel(MVVM) pattern”
 
 Aurelia
 	http://aurelia.io/
-“a JavaScript client framework for mobile, desktop and web leveraging simple conventions and empowering creativity.”
+    “a JavaScript client framework for mobile, desktop and web leveraging simple conventions and empowering creativity.”
 
 DurandalJS
-http://durandal.io/
+    http://durandal.io/
 	Related to Aurelia
 	Library targeted at older browsers
 
 Ractive.js - Javascript library
-http://www.ractivejs.org/
+    http://www.ractivejs.org/
 
 MEAN stack
 	Mongo
@@ -512,3 +515,7 @@ ShawAcademy
 VueJS (JS)
     https://vuejs.org/
     "Reactive Components for Modern Web Interfaces"
+
+Xdebug (PHP)
+    https://jtreminio.com/2012/07/xdebug-and-you-why-you-should-be-using-a-real-debugger/
+    -php debugging
