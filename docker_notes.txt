@@ -1,0 +1,26 @@
+docker pull <image>
+docker pull <image>:<tag>
+-copy image to local
+
+docker images
+-show a list of images
+
+docker rmi <imageid>
+-remove image
+
+docker run -d -p 8080:80 nginx:alpine -it
+-d detach -run in background
+-p port
+
+docker ps -a
+-show running containers
+
+Stop and remove all containers:
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+Run node container, interative, shell
+docker run -it node:6.11.2 sh
+-it interactive (leave window open and allow terminal commands
+
+docker login --username=fheald --password=AiL6sWXc

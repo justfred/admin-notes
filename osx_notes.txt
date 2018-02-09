@@ -1,5 +1,11 @@
 OSX Notes
 
+Show windows side-by-side
+  Click and hold the green button; select a side.
+  Select another window.
+  http://osxdaily.com/2015/10/01/use-split-view-mac-os-x/
+
+
 csrutil
     https://coolestguidesontheplanet.com/what-is-sip-in-osx-10-11-el-capitan/
     Reboot to recovery mode (command-r) then terminal, csrutil disable (or enable)
@@ -7,8 +13,72 @@ csrutil
 mcrypt
     https://coolestguidesontheplanet.com/install-mcrypt-for-php-on-mac-osx-10-10-yosemite-for-a-development-server/
 
+php
+    /etc/php.ini
+
 restart Apache
     sudo apachectl restart
 
+httpd.conf:
+    (set appropriate apache user:)
+    User fheald
+    Group staff
+    (uncomment:)
+    LoadModule rewrite_module libexec/apache2/mod_rewrite.so
+    LoadModule php5_module libexec/apache2/libphp5.so
+    Include /private/etc/apache2/extra/httpd-vhosts.conf
+
 Apache vhosts
     /private/etc/apache2/extra/httpd-vhosts.conf
+
+Count number of files in (this) directory
+    find . -print | wc -l
+
+Sierra:
+    https://coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-macos-sierra/
+
+<VirtualHost  *:80>
+    ServerName smm.local
+    ServerAlias smm.local
+
+    ServerAdmin webmaster@smm-dev.bandwidthx.net
+
+
+
+    AllowEncodedSlashes Off
+
+    LogLevel warn
+    ErrorLog /var/log/apache2/smm.local-error.log
+    CustomLog /var/log/apache2/smm.local-access.log "%h %l %u %t \"
+%r\" %>s %O"
+
+    DocumentRoot /var/www/smm
+
+    Alias /smm /var/www/smm
+
+    <Directory "/var/www/smm">
+        Options -Indexes +FollowSymLinks
+
+        Require all granted
+
+        AllowOverride All
+
+
+
+        <LimitExcept GET POST PUT DELETE>
+            Deny from all
+        </LimitExcept>
+
+    </Directory>
+    # ProxyPass /user-service/ http://173.209.216.155:9092/user-service/
+    # Force XSS protection (useful if XSS protection was disabled by the user)
+#    Header set X-XSS-Protection "1; mode=block"
+    # prevent mime based attacks
+#    Header set X-Content-Type-Options "nosniff"
+    # set whitelist where browser is allowed to load resources
+#    Header set Content-Security-Policy "default-src 'self' csi.gstatic.com; scr
+ipt-src 'self' www.google-analytics.com ajax.googleapis.com maps.googleapis.com
+csi.gstatic.com www.google.com; img-src 'self' data: csi.gstatic.com; style-src
+'self' www.google.com csi.gstatic.com; connect-src 'self' csi.gstatic.com;"
+
+</VirtualHost>

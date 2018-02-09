@@ -3,14 +3,17 @@
 #Init local
 git init
 
-#check in local changes
+#stage local changes
 git add .
 
-#status - files waiting to be committed
+#status - files waiting to be staged/committed
 git status
 
 #commit to local
 git commit -m 'Message'
+
+#add and commit
+git commit -a -m “Message”
 
 #add remote
 git remote add origin https://github.com/justfred/admin-notes.git

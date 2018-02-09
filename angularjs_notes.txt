@@ -1,5 +1,19 @@
 angular_notes.txt
 
+http://www.w3schools.com/angular/angular_intro.asp
+
+#some youtube video "first hour"
+"Module, View, Whatever"
+
+var myApp = angular.module('myApp',[]);
+
+ng-controller
+
+$scope - object
+
+$xxx AngularJS services
+
+
 authentication
 https://medium.com/opinionated-angularjs/techniques-for-authentication-in-angularjs-applications-7bbf0346acec#.xfrva4h4f
 

@@ -1,0 +1,65 @@
+ES6 Notes
+
+var vs let
+	-var are function scope
+	-let is block scope
+	-var can be rewritten accidentally
+	-reccommended use let
+
+const
+	-block scope
+
+Arrow functions
+	replaces function(foo) {} with foo => {}
+	or (implicit return) (foo) => result or (foo => result)
+
+Map
+	-go through an array and apply a function
+	VARIABLE.map(function(ELEMENT) {
+		//do something with ELEMENT
+		//return to modify
+	})
+	-can also be a map function
+	-FH it's foreach, but with a function
+
+.filter
+	-runs a function on an array
+	const ages = [23,42,6,18];
+	const adults = ages.filter((age) => {
+		return age > 20;
+	});
+
+Template strings
+	-replacement for ES5 string concatenate +
+	-enclose string in backticks
+	-${varname}
+	const foo = 'bar';
+	const num = '123';
+	const combo = `My name is ${foo} and I am ${num}`;
+
+Constructor functions
+	function Person(name, age) {
+		this.name = name;
+		this.age = age;
+	};
+	const fred = new Person('Fred','12');
+	//Prototype methods
+	Person.prototype.speak = function() {
+		console.log(`Hi, my name is ${this.name}`);
+	};
+	fred.speak();
+
+Class constructor
+	class foo {
+		constructor(a,b) {
+			this.a = a;
+			this.b = b;
+		}
+		speak(){
+		//whatever
+		}
+	}
+
+Spread operator ...
+	console.log(...names);
+	

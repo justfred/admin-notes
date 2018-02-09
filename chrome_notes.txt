@@ -3,6 +3,9 @@
 #from chrome shell, enter chroot shell
 sudo enter-chroot
 
+#start mysql?
+sudo -u mysql mysqld &
+
 #remove crouton environment
 #list
 sudo edit-chroot -a

@@ -1,0 +1,27 @@
+React Notes
+
+create-react-app
+
+JSX
+  const element = <p> </p>
+  -no quotes?
+  https://reactjs.org/docs/introducing-jsx.html
+
+"Lifecycle methods"
+  constructor()
+  componentWillMount()
+  componentDidMount()
+  componentDidUpdate()
+  render()
+  (etc)
+
+React Developer Tools
+  Chrome plugin
+Redux dev Tools
+  https://github.com/zalmoxisus/redux-devtools-extension
+
+Redux
+  Store - data for application
+  Reducer
+    Reducer for every distinct state
+  Action
