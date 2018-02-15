@@ -4,7 +4,7 @@ var vs let
 	-var are function scope
 	-let is block scope
 	-var can be rewritten accidentally
-	-reccommended use let
+	-recommended use let
 
 const
 	-block scope
@@ -62,4 +62,3 @@ Class constructor
 
 Spread operator ...
 	console.log(...names);
-	

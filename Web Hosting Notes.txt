@@ -5,4 +5,6 @@ Web Hosting Notes
 ?Who did I buy my domains from?
 
 Google Admin
+https://admin.google.com
 Hostmonster control panel
+User aliases - create multiple email aliases for a user

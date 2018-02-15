@@ -1,0 +1,29 @@
+Best Practices
+
+Projects
+  -Put everything in a consistent place.
+
+Git
+  -Start a new git project at the start; check in at every point
+  -add and commit
+    git config --global alias.a '!git add -A && git commit -m'
+    then
+    git a 'message'
+
+Test driven development
+  -write tests (that will fail) before writing code that will
+  -always test for errors first.
+  
+Semicolons at the end of line?
+
+Keep notes on global config/dependencies
+  npm -g
+
+Keep track of workflows and test them regularly
+
+When checking for errors within an if/then, always check for error first.
+  if (error) {
+    //handle
+  } else {
+    //normal
+  }

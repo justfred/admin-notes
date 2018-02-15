@@ -1,0 +1,155 @@
+AWS Notes
+
+Shared Responisbility
+  Amazon - physical and hosted server stuff
+  User - operating system level stuff
+
+IAM
+  Identity Access and Management
+  Control users and roles
+  Users and groups - Who
+  Roles - where
+  Policies - what
+
+IAM Configuration
+  FrederickHeald
+  Access Key: AKIAJMMTYGCYHVUH7X7A
+
+Don't use root accounts for management
+Manage groups instead of users
+
+Google Authenicator
+  Software for phone
+
+S3
+  Object storage - only modify entire objects
+  (Block storage - more traditional, modify smaller blocks - like a volume in AWS)
+  Heavy on exam
+  Durability - 11x9s 99.999999999
+    Can tolerate the loss of two physical facilities
+  Availability - 4x9s 99.99
+  Versioning
+  Buckets
+    Region
+    DNS name
+  Data Consistency
+    Immediate read-after-write consistency
+    DOES NOT guarantee for overwrites - eventual consistency
+  Tiers/Storage Classes
+    S3 Standard
+    S3IA Infrequent Access
+      Same specs
+      Cheaper to store
+      For data you don't access often
+      Retrieval fee
+    Reduced Redundancy
+      99.99 durability
+      Loss of one data center
+      For objects that might tolerate loss
+      More expensive than standard (prices were adjusted?)
+    Glacier
+      Archiving in the cloud
+      Cheap and slow
+      Data retrieval can be slow
+  Security
+    Access can be logged
+  Encryption
+    In transit
+    At rest
+      Server side encryption
+        SSE-S3
+        SSE-KMS (customer key)
+        SSE-C (custom)
+      Client side encryption
+  Versioning
+    Restore points for files stored in the Buckets
+    Increases storage space
+    Once it's on you can't turn it off
+  Cross-region replication
+  LifeCycle Management
+    Rules for file management and cleanup
+
+Cloudfront
+  Content delivery
+  Route 53, AWS hosted DNS service
+
+Storage Gateway
+  Virtual appliance runs locally
+  The most active data is cached locally
+  Hybrid cloud architecture
+  Mount S3 storage from local machines
+    NFS/NAS replication?
+    sudo mount_nfs -o vers=3,nolock -v [Your gateway VM IP address:/] [S3 bucket name] [client drive name]
+  iSCSI
+    block-level storage
+    can be used as a vm or boot volume
+  Volume Gateway
+    Gateway (software appliance) is on premise
+    Stored Volume Mode
+      Restore points located in S3
+    Cached Volume Mode
+      Data stored in S3, local is a cached location
+      Low latency access
+    Tape Gateway
+      Inexpensive backup solution to Glacier
+      Required a virtual appliance
+Migration
+  Import/Export Disk
+    Large amounts of data quickly
+    Portable storage device
+    Not the way Amazon would prefer
+  Snowball
+    Physical appliance
+    Rent the hardware
+    Petabyte scale disk transfer
+    50tb per Snowball
+    Only works with S3
+  Snowball Edge
+  Snowmobile
+  Transfer Accelleration
+    Uses CloudFront Edge Locations, AWS backhauls it to S3 bucket
+    Transfer Speed Comparison Tool
+    Just enable it on a bucket
+    Supports multi-part buckets
+
+VMs, Hosts, and Hypervisors
+  Virtual Machines running on physical servers
+  Hypervisor - share memory, cpu, network resources for multiple VMs
+  Amazon EC2 - Elastic Compute Cloud
+  EC2 Instance is a virtual server
+  Scalable
+  On-demand instances
+    Workloads go up and down
+    More expensive
+    Traditionally pay-per-hour, now pay-per-second, 1-minute minimum.
+  Reserved Instances
+    1-year (breakeven 5 months) or 3-year (breakeven 3 year)
+    C3, C4, C5 - different capabilities, upgradable
+    Convertible reserved instance
+  Spot Instance
+    Saving money
+    Pop-up
+    Cheaper than on demand
+    Prices fluctuate
+    Automatically terminated if price exceeds bid
+    Price varies by availability zone
+    90% less than on demand
+  Different types of EC2
+  Elastic Block Store - EBS
+    "Disks" for EC2 instances
+    Formatted with file system
+    IOPs - Input/output Operations Per Second
+    SSD - "Bursting" supports variable demand
+    Larger volume, more IOPS
+    Bursting credits
+    gp2 - General purpose SSD
+      Bursting
+    io1 - Provisioned IOPS SSD
+      IO intensive workloads
+      Consistent performance
+    st1 - Throughput optimized HDD
+      Cannot boot
+      Large, sequential workloads
+    sc1 - Cold HD
+      Lowest cost
+      Bursting

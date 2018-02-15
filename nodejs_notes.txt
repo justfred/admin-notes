@@ -57,3 +57,15 @@ Mongoose
 PHP Micro Frameworks
     https://modess.io/php-micro-framework-for-a-restful-api-part-1/
     Overview of a bunch of these
+
+Node debug
+	node inspect app.js
+	list(10) - list the next 10 lines
+	n - next
+	c - continue
+	repl - mode for repl
+		type javascript expression and it'll show
+	debugger; - in code, line break
+	node --inspect-brk app.js -
+		chrome://inspect
+	nodemon --inspect-brk app.js -

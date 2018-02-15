@@ -178,6 +178,7 @@ easyfront
     https://medium.com/@lavrton/frontend-development-tools-are-damn-complex-let-us-fix-it-56b3ff46ca8d#.3527ls33i
 
 Mocha/chai (JS)
+	https://mochajs.org/
 	JS testing
 	Used by easyfront
 
@@ -644,3 +645,10 @@ Babel
 
 SPA (terminology)
 	Singe Page App - typically Javascript
+
+lodash (Javascript)
+	Node library functions
+	Superset of underscore.js
+
+yargs (Javascript)
+	command line parser
