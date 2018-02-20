@@ -41,6 +41,10 @@ Mongo
 https://www.mongodb.com
 	-Nosql database
 
+Mongoose.js
+	http://mongoosejs.com/
+	-Add in library for handling mongo calls
+	
 Tableau
 	http://www.tableau.com/
 	-Big Data analysis

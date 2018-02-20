@@ -9,11 +9,13 @@ Git
     git config --global alias.a '!git add -A && git commit -m'
     then
     git a 'message'
-
+    Create a github repo and push code there too
+    Name the github remote github
+    
 Test driven development
   -write tests (that will fail) before writing code that will
   -always test for errors first.
-  
+
 Semicolons at the end of line?
 
 Keep notes on global config/dependencies

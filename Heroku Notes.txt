@@ -2,6 +2,13 @@ Heroku Notes
 
 https://www.udemy.com/node-with-react-fullstack-web-development/learn/v4/t/lecture/7593686?start=0
 
+Install heroku
+  Create Heroku account
+  Install heroku command line tools
+Add RSA key
+  heroku keys:add
+  -this worked but still asked for password
+  
 Deployment Checklist
 -dynamic port binding
   const PORT = process.env.PORT || 5000;
@@ -18,10 +25,6 @@ Specify start script
   },
 Create .gitignore file
   node_modules
-
-Install heroku
-Create Heroku account
-install heroku CLI
 
 Initial deploy
 commit codebase to git

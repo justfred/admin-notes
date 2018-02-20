@@ -1,5 +1,7 @@
 Start Mongodb
 $ mongod &
+or
+$ $mongod (speficy database)
 
 Run Mongo
 $ mongo
@@ -24,6 +26,10 @@ $ mongoimport --jsonArray -d locatewalmart -c store --type json --file walmart.j
 Start Mongodb
 $ mongod &
 
+Point at data directory
+/Users/justfred/Documents/Projects/mongo/bin
+./mongod --dbpath=~/Documents/Projects/mongo-data
+
 Run Mongo
 $ mongo
 
@@ -42,5 +48,9 @@ db.createUser({"user":"fheald","pwd":"Drop1-er",roles: ["readWrite","dbAdmin"]})
 
 $ mongoimport --jsonArray -d locatewalmart -c store --type json --file walmart.json -h yourMongoHost --port yourMongoPort -u yourMongoUsername -p yourMongoPassword
 
+Mongoosejs
+http://mongoosejs.com/
 
-
+Mongoose schemas:
+http://mongoosejs.com/docs/validation.html
+http://mongoosejs.com/docs/guide.html

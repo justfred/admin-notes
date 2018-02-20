@@ -83,9 +83,10 @@ git remote -v
 
 git remote rm <name>
 
+git remote rename <oldname> <newname>
+
 #global /gitignore
 git config --global core.excludesfile ~/.gitignore_global
 
 #remove cached
 git rm -r --cached .idea
-
