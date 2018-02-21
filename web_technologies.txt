@@ -44,7 +44,7 @@ https://www.mongodb.com
 Mongoose.js
 	http://mongoosejs.com/
 	-Add in library for handling mongo calls
-	
+
 Tableau
 	http://www.tableau.com/
 	-Big Data analysis
@@ -234,22 +234,63 @@ CakePHP (PHP)
 	-PHP Framework
 	-older, obsolete?
 
-Kohana
+Kohana (PHP)
     https://kohanaframework.org/
     -PHP Framework
 
-Bower/Gulp/Grunt
-    -build scripting
-    -Grunt is older
+Bower (NPM)
+	https://bower.io/
+	Dependency management
+	Bower installs packages to bower_components
+	bower.json config file
+	Does not manage subdependencies, must load manually
 
-PHPUnit - PHP Unit testing
+Grunt (NPM)
+	https://gruntjs.com/
+	-Task runner/build scripting
+  -Grunt is older
+	-Grunt is config-based, JSON
+	-Grunt and Gulp both use node.js
+	-Gruntfile.js config file
 
-Simpletest - simpler PHP unit testing
+Gulp (NPM)
+	https://gulpjs.com/
+	-Task runner/build scripting
+	-Gulp is script-based, Javascripty.
+	-Gulpfile.js config file
+
+Browserify
+	http://browserify.org/
+	"Module bundler"
+	packages node modules for browsers
+	
+webpack
+    https://webpack.github.io/
+    Dependency management
+	alternative to gulp/grunt
+	Used by easyfront
+	"bundles" components
+	"Module bundler"
+
+NPM/Bower/Browserify/Grunt/Gulp/Webpack
+	https://deliciousbrains.com/grunt-vs-gulp-battle-build-tools/
+	https://stackoverflow.com/questions/35062852/npm-vs-bower-vs-browserify-vs-gulp-vs-grunt-vs-webpack
+
+Composer (PHP)
+	https://getcomposer.org/
+	-Dependency management system for PHP
+	composer.phar runtime
+
+PHPUnit (PHP)
+	PHP Unit testing
+
+Simpletest (PHP)
+	simpler PHP unit testing
 
 Fitnesse - Unit testing
     http://fitnesse.org/
 
-Protractor
+Protractor (JS)
     https://github.com/angular/protractor
     http://angular.github.io/protractor/#/
 	-AngularJS E2E (end to end) test framework
@@ -259,7 +300,7 @@ Selenium
     http://www.seleniumhq.org/
 	Web browser automation
 
-Karma
+Karma (JS)
 	-AngularJS unit testing
     https://karma-runner.github.io/0.13/index.html
 
@@ -307,13 +348,6 @@ Gocd
 Puppet
 
 Chef
-
-webpack
-    https://webpack.github.io/
-    Dependency management
-	alternative to gulp/grunt
-	Used by easyfront
-	"bundles" components
 
 Graph Server
 	https://en.wikipedia.org/wiki/Graph_database
@@ -372,11 +406,6 @@ Swift Express
 Play (Java)
 	https://www.playframework.com/
 	“High velocity web framework for Java and Scala
-
-Composer
-	https://getcomposer.org/
-	-Dependency management system for PHP
-	composer.phar runtime
 
 Yum
 	-Package Manager
@@ -656,3 +685,6 @@ lodash (Javascript)
 
 yargs (Javascript)
 	command line parser
+
+Cassandra
+	Database

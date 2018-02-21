@@ -8,7 +8,7 @@ Install heroku
 Add RSA key
   heroku keys:add
   -this worked but still asked for password
-  
+
 Deployment Checklist
 -dynamic port binding
   const PORT = process.env.PORT || 5000;
@@ -46,3 +46,12 @@ Heroku deploys project
 Subsequent deploys
 commit codebase to git
 Deploy app with git
+
+-----
+
+Environment variables
+
+heroku config
+heroku config:set NAME=Fred
+heroku config:get NAME
+heroku config:unset NAME

@@ -11,7 +11,7 @@ Git
     git a 'message'
     Create a github repo and push code there too
     Name the github remote github
-    
+
 Test driven development
   -write tests (that will fail) before writing code that will
   -always test for errors first.
@@ -29,3 +29,12 @@ When checking for errors within an if/then, always check for error first.
   } else {
     //normal
   }
+
+Magic numbers
+  Don't use magic numbers anywhere.  This means you.
+
+Languages
+  Don't use magic strings; use a language file.
+
+Secrets
+  Should be in environment variables or external files
