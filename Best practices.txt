@@ -32,9 +32,16 @@ When checking for errors within an if/then, always check for error first.
 
 Magic numbers
   Don't use magic numbers anywhere.  This means you.
+  Put numbers in master or config files, then use as constants.
 
 Languages
   Don't use magic strings; use a language file.
 
 Secrets
   Should be in environment variables or external files
+
+Business Logic
+  Don't put business logic in view layer, if possible.  Calculations should be in model or controller, not view.
+
+Least powerful denominator
+  When possible, make variables as "weak" as possible.  Local or const when possible.

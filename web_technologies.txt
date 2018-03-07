@@ -217,7 +217,7 @@ Silex (PHP)
 	http://silex.sensiolabs.org/
 	-Built on Symfony
     https://www.reddit.com/r/PHP/comments/1bdln1/symfony2_vs_laravel
-	-”micro framework”
+	-”micro framework” for APIs
 
 Zend (PHP)
     -PHP Framework
@@ -263,7 +263,7 @@ Browserify
 	http://browserify.org/
 	"Module bundler"
 	packages node modules for browsers
-	
+
 webpack
     https://webpack.github.io/
     Dependency management
@@ -688,3 +688,10 @@ yargs (Javascript)
 
 Cassandra
 	Database
+
+Charles Proxy
+	https://www.charlesproxy.com/
+	Like Firebug or Chrome Dev tools, allows dev to review machine traffic
+
+Code Sandbox (javascript)
+	https://codesandbox.io

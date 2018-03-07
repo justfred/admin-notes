@@ -1,0 +1,82 @@
+Javascript Node Packages
+
+Axios
+  https://www.npmjs.com/package/axios
+  "Promise based HTTP client for the browser and node.js"
+  axios.get(url).then...
+
+Bcryptjs
+  SHA encryption
+
+Body-parser
+
+Bootstrap
+
+Browserify
+
+Browsersync
+  "browser-sync": "^2.23.6",
+
+Crypto-js
+
+Deparam
+  https://gist.github.com/andrewjmead/b71e03d8df237983285892f9a265d401
+  Parse querystring parameters
+
+Expect
+  Unit testing
+
+Express
+  Routing
+
+Gulp
+
+Gulp-autoprefixer
+
+Gulp-clean
+
+Gulp-concat
+
+Gulp-sass
+
+Jquery
+
+Jsonwebtoken
+  jwt read/write
+
+lodash
+  Misc utilities
+  Related to underscore
+
+Nodemon
+
+Merge-stream
+  Concat stylesheet
+Mocha
+  Unit testing
+
+Moment
+  https://momentjs.com/
+  Time manipulation
+
+Mongodb
+  Database
+
+Mongoose
+  Helper libraries for Mongo
+
+Mustache
+  https://github.com/janl/mustache.js/
+  Templates
+
+Popper
+
+Socket.io
+  Socket communications
+
+Supertest
+  Unit testing
+
+Underscore
+
+Validator

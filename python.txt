@@ -1,0 +1,3 @@
+Python Notes
+
+https://www.stavros.io/tutorials/python/

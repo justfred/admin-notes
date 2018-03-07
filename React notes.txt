@@ -25,3 +25,10 @@ Redux
   Reducer
     Reducer for every distinct state
   Action
+
+"Control component"
+  Inputs are linked to actions
+  In React, input components (think user interaction) must have a defined behavior. The value that is displayed in a text box must be linked to a variable, and have a function that defines how updating that field works. Because the code defines all this behavior, these components are referred to as controlled components in React.
+
+"Single source of truth"
+  Only define things once, at the necessary level

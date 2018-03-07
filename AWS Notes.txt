@@ -153,3 +153,29 @@ VMs, Hosts, and Hypervisors
     sc1 - Cold HD
       Lowest cost
       Bursting
+
+      API is a customized EC2 instance
+        Template for the root volume
+        Permissions than control who can use
+        Block device mapping
+        HVM (hardware virtual) or PV (paravirtual)
+
+ELB - Elastic Load Balancer
+    Must be in the same region
+      to create availability across regions use Route 53
+
+-----
+yum update
+yum install httpd
+service httpd status
+service httpd start
+chkconfig
+chkconfig httpd on
+  -configure service to automatically start
+  -turn httpd on for levels 2-5
+
+web files are in /var/www/html
+
+? how to turn on https?
+-----
+Windows - get windows password

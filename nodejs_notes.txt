@@ -19,6 +19,7 @@ npm
 
 	npm list -g
 		-List global modules
+	npm list -g --depth=0
 
 	npm init
 		-wizard for creating package.json files
